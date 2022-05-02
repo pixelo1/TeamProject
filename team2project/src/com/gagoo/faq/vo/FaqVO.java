@@ -2,7 +2,7 @@ package com.gagoo.faq.vo;
 
 public class FaqVO {
 	private Long no;
-	private String title, contnet, writer, writeDate;
+	private String title, content, writer, writeDate;
 	private Long hit;
 	
 	
@@ -18,11 +18,11 @@ public class FaqVO {
 	public void setTitle(String title) {
 		this.title = title;
 	}
-	public String getContnet() {
-		return contnet;
+	public String getContent() {
+		return content;
 	}
-	public void setContnet(String contnet) {
-		this.contnet = contnet;
+	public void setContent(String contnet) {
+		this.content = contnet;
 	}
 	public String getWriter() {
 		return writer;
@@ -44,7 +44,7 @@ public class FaqVO {
 	}
 	@Override
 	public String toString() {
-		return "FaqVO [no=" + no + ", title=" + title + ", contnet=" + contnet + ", writer=" + writer + ", writeDate="
+		return "FaqVO [no=" + no + ", title=" + title + ", contnet=" + content + ", writer=" + writer + ", writeDate="
 				+ writeDate + ", hit=" + hit + "]";
 	}
 	

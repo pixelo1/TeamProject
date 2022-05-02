@@ -24,7 +24,7 @@ public class Main {
 		Out.menuOut("-", 29, "1. 공지사항  2. 프로모션  3. 제품상세  4. 질문답변", "5. 회원관리  6. 마이페이지  0. 종료");
 		
 		//메뉴 입력
-		String menu = Input.scannerIn("메뉴를 선택해 주세요");
+		String menu = Input.scStr("메뉴를 선택해 주세요");
 		
 		//입력 처리(이동,예외,종료)
 		switch (menu) {

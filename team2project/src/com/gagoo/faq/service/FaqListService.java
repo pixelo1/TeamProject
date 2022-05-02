@@ -1,18 +1,19 @@
 package com.gagoo.faq.service;
 
-import com.gagoo.faq.controller.Service;
+import java.util.List;
+
 import com.gagoo.faq.dao.FaqDAO;
+import com.gagoo.faq.vo.FaqVO;
 import com.gagoo.util.io.Out;
 
-public class FaqListService implements Service{
+public class FaqListService {
 
-	@Override
-	public void service() throws Exception {
+	public List<FaqVO> service() throws Exception {
 		
 		Out.header("FAQ 리스트");
 		
 		FaqDAO dao = new FaqDAO();
-		dao.list();
+		return dao.list();
 	
 }
 }

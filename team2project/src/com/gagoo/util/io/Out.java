@@ -1,5 +1,7 @@
 package com.gagoo.util.io;
 
+import com.gagoo.faq.vo.FaqVO;
+
 public class Out {
 
 	
@@ -33,5 +35,7 @@ public class Out {
 		menuArrayPrint(menu);
 		symbol(symbol, num);
 	}
+	
+
 	
 }

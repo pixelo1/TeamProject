@@ -1,17 +1,19 @@
 package com.gagoo.faq.service;
 
-import com.gagoo.faq.controller.Service;
+import com.gagoo.faq.dao.FaqDAO;
+import com.gagoo.faq.vo.FaqVO;
 import com.gagoo.util.io.Out;
 
-public class FaqUpdateService implements Service{
+public class FaqUpdateService{
 
 
-	@Override
-	public void service() {
+	public Integer service(FaqVO vo) throws Exception {
 		
 		
 		Out.header("FAQ 수정");
+		FaqDAO dao = new FaqDAO();
 		
+		return dao.update(vo);
 	
 }
 }
